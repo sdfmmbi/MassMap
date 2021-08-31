@@ -24,7 +24,7 @@ echo -e "${GREEN}
 setupTools(){
     echo -e "${GREEN}[+] Setting things up.${RESET}"
     sudo apt update -y
-    sudo apt install -y gcc g++ make libpcap-dev xsltproc jq
+    sudo apt install -y gcc g++ make libpcap-dev xsltproc jq libssl-dev
     
     if [ -d $RESULTS_PATH ]
     then
